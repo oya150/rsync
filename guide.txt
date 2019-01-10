@@ -1,0 +1,10 @@
+## 1. copyImage.sh 에 싱크를 원하는 디렉토리 2개를 적어 주세요
+full_mockup_dir(목업 이미지 디렉토리 경로)
+full_img_dir(테스트서버 이미지 디렉토리 경로)
+
+## 2. copyImage.sh 파일을 목업 git 루트 디렉토리에 복사 해 주세요
+
+## 2. "crontab -e"  입력하면 수정 화면으로 넘어갑니다. 2-1 과 같이 copyImage.sh 경로를 적어 주세요
+* * * * * -> 분 시간 일 월 주  입니다. 30분단위로 싱크할려면 30 * * * *  매일 11시에 싱크할려면 * * 11 * * 로 하시면 됩니다. 자세한 내용은 crontab 으로 검색해보세요
+## 2-1. * * * * * /Users/dev/rep_git/mocup/melon-mma/copyImage.sh
+## 2-2 로그확인은 rsyncLog.txt:
